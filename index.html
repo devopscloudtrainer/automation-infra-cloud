@@ -1,0 +1,51 @@
+* Remotes
+* Pull Request
+* Fork Mechanism
+
+
+TASK-1: Static web application for OTP Service , we need to add index.html for automation in automation-infra-cloud
+git clone https://github.com/GoudSagar/automation-infra-cloud.git
+cd automation-infra-cloud
+git config  --global user.name "GoudSagar"
+git config --global user.email "goud.sagar.t@gmail.com"
+
+git branch
+vi index.html -> add content -> :wq
+git add .
+git commit -m "Ticket-4321 Static web page for automation OTP service"
+git remote -v
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(fetch)
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(push)
+
+git push origin main
+
+TASK-2: Update an transaction.sh script for OTP service
+cd automation-infra-cloud
+
+git remote -v
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(fetch)
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(push)
+
+git remote add upstream https://github.com/devopscloudtrainer/automation-infra-cloud.git
+
+git remote -v
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(fetch)
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(push)
+upstream https://github.com/devopscloudtrainer/automation-infra-cloud.git(fetch)
+upstream https://github.com/devopscloudtrainer/automation-infra-cloud.git(push)
+
+git pull upstream main
+
+git branch
+
+vi transaction.sh -> update ->:wq 
+git add .
+git commit -m "Ticket - 876542 Updating transaction.sh for OTP service"
+
+git remote -v
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(fetch)
+origin  https://github.com/GoudSagar/automation-infra-cloud.git(push)
+upstream https://github.com/devopscloudtrainer/automation-infra-cloud.git(fetch)
+upstream https://github.com/devopscloudtrainer/automation-infra-cloud.git(push)
+
+git push origin main
